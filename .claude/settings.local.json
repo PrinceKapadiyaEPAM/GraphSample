@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet add *)",
+      "Bash(dotnet remove *)",
+      "Bash(dotnet build *)",
+      "Bash(dotnet list *)",
+      "Bash(rm /c/Prince/AI/GraphSample/GraphSampleApi/Infrastructure/AppOnlyGraphClient.cs)",
+      "Bash(mkdir -p /c/Prince/AI/GraphSample/GraphSampleApi/Services /c/Prince/AI/GraphSample/GraphSampleApi/Models)"
+    ]
+  }
+}

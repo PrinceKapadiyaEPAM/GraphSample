@@ -1,0 +1,6 @@
+@GraphSampleApi_HostAddress = http://localhost:5074
+
+GET {{GraphSampleApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
