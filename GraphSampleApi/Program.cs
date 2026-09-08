@@ -1,3 +1,4 @@
+using GraphSampleApi.Infrastructure;
 using GraphSampleApi.Services;
 using Microsoft.Identity.Web;
 using Scalar.AspNetCore;
@@ -26,7 +27,8 @@ builder.Services.AddCors(options =>
     });
 });
 
-builder.Services.AddOpenApi();
+builder.Services.AddOpenApi(options =>
+    options.AddDocumentTransformer<BearerSecuritySchemeTransformer>());
 
 var app = builder.Build();
 
