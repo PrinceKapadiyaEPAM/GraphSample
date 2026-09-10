@@ -8,7 +8,14 @@
       "Bash(rm /c/Prince/AI/GraphSample/GraphSampleApi/Infrastructure/AppOnlyGraphClient.cs)",
       "Bash(mkdir -p /c/Prince/AI/GraphSample/GraphSampleApi/Services /c/Prince/AI/GraphSample/GraphSampleApi/Models)",
       "Bash(dotnet new *)",
-      "Bash(dotnet sln *)"
+      "Bash(dotnet sln *)",
+      "mcp__claude_ai_Microsoft_Learn__microsoft_docs_search",
+      "Bash(git rm *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git -C \"C:\\\\Prince\\\\AI\\\\GraphSample\" add GraphSampleApi/GraphSampleApi.csproj .claude/settings.local.json)",
+      "Bash(git -C 'C:\\\\Prince\\\\AI\\\\GraphSample' commit -m ' *)"
     ]
   }
 }

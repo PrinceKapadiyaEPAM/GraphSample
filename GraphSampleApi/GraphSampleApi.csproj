@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.7" />
-    <PackageReference Include="Microsoft.Graph" Version="5.*" />
+    <PackageReference Include="Microsoft.Graph" Version="6.*" />
     <PackageReference Include="Microsoft.Identity.Web" Version="4.14.2" />
     <PackageReference Include="Microsoft.Identity.Web.MicrosoftGraph" Version="4.14.2" />
     <PackageReference Include="Scalar.AspNetCore" Version="2.17.3" />
