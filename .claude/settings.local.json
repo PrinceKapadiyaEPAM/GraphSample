@@ -15,7 +15,14 @@
       "Bash(git commit *)",
       "Bash(git push *)",
       "Bash(git -C \"C:\\\\Prince\\\\AI\\\\GraphSample\" add GraphSampleApi/GraphSampleApi.csproj .claude/settings.local.json)",
-      "Bash(git -C 'C:\\\\Prince\\\\AI\\\\GraphSample' commit -m ' *)"
+      "Bash(git -C 'C:\\\\Prince\\\\AI\\\\GraphSample' commit -m ' *)",
+      "Bash(git *)",
+      "Bash(dotnet run *)",
+      "Bash(dotnet package *)",
+      "Bash(curl -s \"https://api.nuget.org/v3/registration5-semver1/microsoft.identity.web.microsoftgraph/index.json\")",
+      "Bash(curl -s \"https://api.nuget.org/v3/registration5-semver1/microsoft.identity.web.microsoftgraph/3.9.2.json\")",
+      "Bash(curl -s \"https://api.nuget.org/v3/catalog0/data/2025.05.23.17.37.54/microsoft.identity.web.microsoftgraph.3.9.2.json\")",
+      "Bash(dotnet restore *)"
     ]
   }
 }
