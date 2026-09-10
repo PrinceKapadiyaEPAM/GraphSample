@@ -1,5 +1,7 @@
+using Azure.Identity;
 using GraphSampleApi.Infrastructure;
 using GraphSampleApi.Services;
+using Microsoft.Graph;
 using Microsoft.Identity.Web;
 using Scalar.AspNetCore;
 
@@ -9,6 +11,16 @@ builder.Services.AddMicrosoftIdentityWebApiAuthentication(builder.Configuration,
     .EnableTokenAcquisitionToCallDownstreamApi()
     .AddMicrosoftGraph(builder.Configuration.GetSection("MicrosoftGraph"))
     .AddInMemoryTokenCaches();
+
+builder.Services.AddKeyedSingleton<GraphServiceClient>("app-graph", (sp, _) =>
+{
+    var cfg = sp.GetRequiredService<IConfiguration>();
+    var credential = new ClientSecretCredential(
+        cfg["AzureAd:TenantId"]!,
+        cfg["AzureAd:ClientId"]!,
+        cfg["AzureAd:ClientSecret"]!);
+    return new GraphServiceClient(credential);
+});
 
 builder.Services.AddScoped<IEmailService, GraphEmailService>();
 builder.Services.AddScoped<IOneDriveService, OneDriveService>();

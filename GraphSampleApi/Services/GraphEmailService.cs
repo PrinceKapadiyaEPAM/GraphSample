@@ -1,11 +1,14 @@
 using GraphSampleApi.Models;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Graph;
 using Microsoft.Graph.Models;
 using Microsoft.Graph.Users.Item.SendMail;
 
 namespace GraphSampleApi.Services;
 
-public class GraphEmailService(GraphServiceClient graphClient, IConfiguration configuration) : IEmailService
+public class GraphEmailService(
+    [FromKeyedServices("app-graph")] GraphServiceClient graphClient,
+    IConfiguration configuration) : IEmailService
 {
     public async Task SendEmailAsync(EmailRequest request)
     {
