@@ -10,7 +10,7 @@ namespace GraphSampleApi.Controllers;
 [Authorize]
 public class GraphController : ControllerBase
 {
-    private static readonly string[] RequiredScopes = ["User.Read"];
+    private static readonly string[] RequiredScopes = ["Read"];
     private readonly GraphServiceClient _graph;
 
     public GraphController(GraphServiceClient graph)
