@@ -22,7 +22,15 @@
       "Bash(curl -s \"https://api.nuget.org/v3/registration5-semver1/microsoft.identity.web.microsoftgraph/index.json\")",
       "Bash(curl -s \"https://api.nuget.org/v3/registration5-semver1/microsoft.identity.web.microsoftgraph/3.9.2.json\")",
       "Bash(curl -s \"https://api.nuget.org/v3/catalog0/data/2025.05.23.17.37.54/microsoft.identity.web.microsoftgraph.3.9.2.json\")",
-      "Bash(dotnet restore *)"
+      "Bash(dotnet restore *)",
+      "Bash(curl -s \"https://api.nuget.org/v3/query2?q=packageid:Microsoft.Graph&prerelease=false&semVerLevel=2.0.0\")",
+      "Bash(curl -s \"https://api.nuget.org/v3-flatcontainer/microsoft.graph/index.json\")",
+      "Bash(curl -s \"https://api.nuget.org/v3-flatcontainer/microsoft.identity.web.graphserviceclient/index.json\")",
+      "Bash(curl -s \"https://api.nuget.org/v3/registration5-semver1/microsoft.identity.web.graphserviceclient/index.json\")",
+      "Bash(curl -s \"https://api.nuget.org/v3-flatcontainer/microsoft.identity.web.graphserviceclient/3.9.2/microsoft.identity.web.graphserviceclient.3.9.2.nuspec\")",
+      "Bash(curl -s \"https://api.nuget.org/v3-flatcontainer/microsoft.identity.web.graphserviceclient/3.15.1/microsoft.identity.web.graphserviceclient.3.15.1.nuspec\")",
+      "Bash(curl -s \"https://api.nuget.org/v3/registration5-semver1/microsoft.identity.web.graphserviceclient/3.15.1.json\")",
+      "Bash(dotnet user-secrets *)"
     ]
   }
 }
